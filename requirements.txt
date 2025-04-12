@@ -4,3 +4,4 @@ python-vlc
 pillow
 numpy
 requests
+pyannote.audio
