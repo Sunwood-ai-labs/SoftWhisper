@@ -2,11 +2,11 @@
 
 <p align="center">
    <a href="README_JP.md"><img src="https://img.shields.io/badge/ドキュメント-日本語-white.svg" alt="JA doc"/></a>
-   <a href="README.md"><img src="https://img.shields.io/badge/english-document-white.svg" alt="EN doc"></a>
+   <a href="README_EN.md"><img src="https://img.shields.io/badge/english-document-white.svg" alt="EN doc"></a>
 </p>
 
 <p align="center">
-   <img src="docs/header.png" alt="SoftWhisper Header" width="600px">
+   <img src="docs/header.png" alt="SoftWhisper Header">
 </p>
 
 <p align="center">
@@ -15,73 +15,73 @@
    <img src="https://img.shields.io/badge/VLC-Required-orange.svg" alt="VLC"/>
 </p>
 
-音声文字起こしと話者分離を簡単に行えるソフトウェア！
+A software that makes speech recognition and speaker diarization easy!
 
-## 必要な環境
+## Requirements
 
-- Python 3.7以上
+- Python 3.7 or higher
 - FFmpeg
-- VLCメディアプレイヤー
+- VLC Media Player
 
-## インストール手順
+## Installation
 
-1. このリポジトリをクローン：
+1. Clone this repository:
 ```bash
 git clone https://github.com/NullMagic2/SoftWhisper .
 ```
 
-2. 必要なソフトウェアをインストール：
-   - [Python](https://www.python.org/downloads/) (3.7以上)
+2. Install required software:
+   - [Python](https://www.python.org/downloads/) (3.7 or higher)
    - [FFmpeg](https://ffmpeg.org/download.html)
-   - [VLCメディアプレイヤー](https://www.videolan.org/vlc/)
+   - [VLC Media Player](https://www.videolan.org/vlc/)
 
-3. 依存パッケージをインストール：
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## 使い方
+## Usage
 
-1. SoftWhisper.batを実行：
+1. Run SoftWhisper.bat:
 ```bash
 .\SoftWhisper.bat
 ```
 
-2. GUIが起動したら、以下の手順で文字起こし：
-   - 音声/動画ファイルを選択
-   - モデルサイズを選択（tiny, base, small, medium, large）
-   - 必要に応じて話者分離機能を有効化
-   - 「開始」ボタンをクリック
+2. When the GUI launches, follow these steps for transcription:
+   - Select an audio/video file
+   - Choose a model size (tiny, base, small, medium, large)
+   - Enable speaker diarization if needed
+   - Click the "Start" button
 
 <p align="center">
    <img src="docs/demo.png" alt="SoftWhisper Demo" width="600px">
 </p>
 
-## 機能
+## Features
 
-- 🎯 高精度な文字起こし（Whisperモデル使用）
-- 👥 話者分離機能（誰が話したかを識別）
-- 🌍 多言語サポート
-- 🎮 使いやすいGUIインターフェース
+- 🎯 High-accuracy transcription (using Whisper model)
+- 👥 Speaker diarization (identify who is speaking)
+- 🌍 Multi-language support
+- 🎮 User-friendly GUI interface
 
-## トラブルシューティング
+## Troubleshooting
 
-### よくある問題
+### Common Issues
 
-1. `libvlc.dll not found`エラー
-   - VLCメディアプレイヤーがインストールされていることを確認してください
-   - インストール後、プログラムを再起動してください
+1. `libvlc.dll not found` error
+   - Make sure VLC Media Player is installed
+   - Restart the program after installation
 
-2. FFmpegエラー
-   - FFmpegが正しくインストールされ、PATHに追加されていることを確認してください
+2. FFmpeg error
+   - Ensure FFmpeg is properly installed and added to PATH
 
-## ライセンス
+## License
 
-[MITライセンス](LICENSE)
+[MIT License](LICENSE)
 
-## 謝辞
+## Acknowledgments
 
-このプロジェクトは以下のオープンソースプロジェクトを使用しています：
+This project uses the following open-source projects:
 - [Whisper](https://github.com/openai/whisper)
 - [inaSpeechSegmenter](https://github.com/ina-foss/inaSpeechSegmenter)
 - [FFmpeg](https://ffmpeg.org/)
